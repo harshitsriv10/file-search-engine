@@ -1,0 +1,8 @@
+(lp0
+S'example.pdf'
+p1
+aS'a.txt'
+p2
+aS'b.txt'
+p3
+a.

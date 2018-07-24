@@ -1,0 +1,26 @@
+
+Shape Identifier : This Function finds the shape of the food item identified in the processed image.
+Size Identifier : This Function finds the size of the food item identified in the processed image
+Color Identifier : This Function finds the color of the food item identified in the processed image
+Position Identifier : This Function finds the position of the food item identified in the processed image
+
+Food Identifier : This function takes the parameters identified(shape, size and Color) and uses them to Find the Name of the Food present in the Image
+
+Food nutrient Provider : This function takes the name of the Food and Finds the Nutritional Content of it from the database
+
+Food Hazard Provider : This function takes the name of the Food and Finds the Health hazards related to it from the database
+
+Hazards Matcher : This function compares the health hazards of the food and the user specific hazard and gives the warning signal
+
+Tag Generator : This function makes a tag with the food name and a warning sign based on the hazard matchers warning signal
+
+Tag Augumenter : This Function places the tag over the image frames at the location provided by the position identifier and generates the output video
+
+Warning Signal : [Boolean] True implies that some food hazard(s) matches the user specific hazards
+
+Tag : [food name(string), warning icon] contains the information to be showed over the identified food 
+
+User Hazards Database : [hazards(strings)] contains the health hazards specific to the user
+
+Image Frames Database : [images] contains image frames of the video
+
